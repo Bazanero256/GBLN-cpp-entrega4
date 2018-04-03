@@ -30,7 +30,7 @@ void list::addElement(int number)
 }
 
 list::list() {
-	Node* first = nullptr;
+	 first = nullptr;
 }
 
 list::~list()
@@ -46,12 +46,12 @@ list::~list()
 bool list::isPrime(int checkNumber)
 {
 	int i = 2;
-
-	while (i <= (checkNumber / 2)) {
+	bool result = true;
+	while (i <= (checkNumber / 2) && result) {
 		if (checkNumber % i == 0) {
-			return false;
+			result = false;
 		}
 		++i;
 	}
-	return true;
+	return result;
 }
