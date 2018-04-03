@@ -6,7 +6,7 @@
 
 void list::addElement(int number)
 {
-	if (!this->isPrime(number)) {
+	if (!isPrime(number)) {
 		std::cout << " el numero ingresado no es primo, por favor ingrese un numero primo" << std::endl;
 	
 	}
